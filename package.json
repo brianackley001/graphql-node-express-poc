@@ -1,0 +1,14 @@
+{
+  "name": "graphql-001",
+  "version": "1.0.0",
+  "description": "graphql node app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Brian Ackley",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^16.8.0"
+  }
+}
