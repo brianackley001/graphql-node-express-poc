@@ -1,20 +1,25 @@
 {
   "name": "graphql-001",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "graphql node app",
-  "main": "index.js",
-
+  "main": "index.ts",
   "type": "module",
   "scripts": {
-    "test": "test"
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/index.js"
   },
   "author": "Brian Ackley",
   "license": "ISC",
   "dependencies": {
+    "@apollo/server": "^4.9.3",
     "eslint": "^8.48.0",
     "express": "^4.18.2",
     "graphql": "^16.8.0",
     "graphql-http": "^1.22.0",
     "prettier": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "typescript": "^5.2.2"
   }
 }
