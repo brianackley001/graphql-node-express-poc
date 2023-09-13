@@ -1,25 +1,25 @@
 {
-  "name": "graphql-001",
-  "version": "1.1.0",
-  "description": "graphql node app",
-  "main": "index.ts",
-  "type": "module",
+  "name": "graphql-crash-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "compile": "tsc",
-    "start": "npm run compile && node ./dist/index.js"
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
   },
-  "author": "Brian Ackley",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "@apollo/server": "^4.9.3",
-    "eslint": "^8.48.0",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
-    "graphql": "^16.8.0",
-    "graphql-http": "^1.22.0",
-    "prettier": "^3.0.3"
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0",
+    "mongoose": "^7.5.1"
   },
   "devDependencies": {
-    "@types/node": "^20.6.0",
-    "typescript": "^5.2.2"
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1"
   }
 }
